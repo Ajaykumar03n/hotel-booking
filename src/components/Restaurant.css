@@ -1,0 +1,96 @@
+.header {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: aquamarine;
+}
+
+.restaurant-page {
+  margin-top: 5%; /* Adjusted to 5% for better alignment */
+}
+
+/* Styles for the slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 20px auto; /* Centered the container */
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 400px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Additional styles for content */
+.container {
+  width: 90%;
+  margin: 20px auto; /* Adjusted to center the container */
+  overflow: hidden;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  width: 100%;
+  padding: 20px;
+}
+
+.image-container {
+  width: 30%;
+  float: left;
+  padding: 20px;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}

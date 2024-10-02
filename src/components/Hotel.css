@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 85%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+
+
+.content {
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hotel-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.amenities {
+  margin-top: 20px;
+}
+
+.amenity {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.amenity img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.amenity-details {
+  flex: 1;
+}
+
+.amenity-details h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.amenity-details p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.footer h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .amenity {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amenity img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

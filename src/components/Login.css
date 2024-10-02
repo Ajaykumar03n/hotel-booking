@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login {
+    background-color: rgb(249, 252, 252);
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.login h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #09d356;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #00b35f;
+}
+
+button[type="button"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #0cc1ce;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #008b9a;
+}
+
+.login p {
+    margin: 15px 0;
+    color: #666;
+}
