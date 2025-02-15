@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Payment.css";
-import Navbar from "./Navbar";
 
 const Payment = () => {
   const [paymentDetails, setPaymentDetails] = useState({
@@ -24,7 +23,6 @@ const Payment = () => {
     try {
       const response = await axios.post("http://localhost:8000/payment", paymentDetails);
       console.log(response.data);
-      // Reset form after successful submission
       setPaymentDetails({
         amount: "",
         referenceNumber: "",
@@ -43,10 +41,6 @@ const Payment = () => {
 
   return (
     <div className="payment-form">
-      <header className="header">
-        <h1>Hotel Atrium</h1>
-        <Navbar />
-      </header>
       <h2>Payment Details</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -105,7 +99,8 @@ const Payment = () => {
           placeholder="Phone Number"
           required
         />
-        <button type="submit">Submit Payment</button>
+      
+        <button type="submit" className="buttonpay">Submit Payment</button>
       </form>
     </div>
   );

@@ -1,21 +1,20 @@
-// src/components/Rooms.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
-import './App1.css';
+import './Rooms.css';
 
 const Room = ({ image, altText, link, roomType, rate }) => (
   <div className="room">
     <img src={image} alt={altText} />
     <div className="room-content">
-      <h3><Link to={link}>{roomType}</Link></h3>
+      <h3>{roomType}</h3>
       <div className="rate">
         <h1>{rate}</h1>
         <p>+GST/Day</p>
       </div>
       <div className="book-now">
-        <Link to={link}><button  type='button' className='b2'>Book</button></Link>
+        <Link to={link}>
+          <button type='button' className='cta-button'>Book Now</button>
+        </Link>
       </div>
     </div>
   </div>
@@ -23,10 +22,6 @@ const Room = ({ image, altText, link, roomType, rate }) => (
 
 const Rooms = () => (
   <div className="container">
-    <header className="header">
-      <h1>Hotel Atrium</h1>
-      <Navbar />
-    </header>
     <div className="header">
       <h1>Hotel Rooms</h1>
     </div>
