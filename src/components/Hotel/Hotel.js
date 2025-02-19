@@ -6,14 +6,14 @@ const Hotel = () => {
   return (
     <div className="homepage">
       <header className="hotel-header">
-        <h1>Hotel Atrium</h1>
-        <p>Your Luxury Getaway in the Heart of the City</p>
+        <h1>சுருளி விலாஸ்</h1>
+        <p>நகரின் மையத்தில் உங்கள் ஆடம்பர பயணம்</p>
       </header>
       <main className="content">
         <section className="intro">
-          <h2>Welcome to Hotel Atrium</h2>
+          <h2>சுருளி விலாஸ் உங்களை வரவேற்கிறது</h2>
           <p>
-            Experience the epitome of luxury and comfort at Hotel Atrium, where modern amenities meet warm, personalized service. Whether you're here for business or leisure, we ensure a memorable and comfortable stay.
+          நவீன வசதிகள் சூடான, தனிப்பயனாக்கப்பட்ட சேவையை சந்திக்கும் சுருளி விலாஸில் ஆடம்பர மற்றும் வசதியின் சுருக்கத்தை அனுபவிக்கவும். நீங்கள் வணிகத்திற்காகவோ அல்லது ஓய்வுக்காகவோ இங்கு வந்தாலும், மறக்கமுடியாத மற்றும் வசதியான தங்குமிடத்தை நாங்கள் உறுதி செய்கிறோம்.
           </p>
           <img src="/styles/hotel2.png" alt="Hotel Atrium" className="hotel-image" />
         </section>
@@ -52,9 +52,9 @@ const Hotel = () => {
       </main>
       <footer className="footer">
         <h3>Contact Us</h3>
-        <p>Email: contact@hotelatrium.com</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Address: 123 Luxury Street, City Center</p>
+        <p>Email: contact@surulivilas.com</p>
+        <p>Phone: +91 0123456789</p>
+        <p>Address: 7/13 surulivilas, Madurai - 625001</p>
       </footer>
     </div>
   );

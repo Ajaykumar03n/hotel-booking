@@ -23,7 +23,7 @@ const Room = ({ image, altText, link, roomType, rate }) => (
 const Rooms = () => (
   <div className="container">
     <div className="header">
-      <h1>Hotel Rooms</h1>
+      <h1>விலாஸ் அறைகள்</h1>
     </div>
     <div className="rooms">
       <Room

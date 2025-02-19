@@ -5,13 +5,13 @@ import './Navbar.css';
 const Navbar = () => (
   <div>
     <header>
-      <h1>HOTEL ATRIUM</h1>
+      <h1>சுருளி விலாஸ்</h1>
     </header>
     <nav className="navbar">
-      <Link to="/hotel">Home</Link>
+      <Link to="/home">Home</Link>
       <Link to="/rooms">Rooms</Link>
       <Link to="/restaurant">Restaurant</Link>
-      <Link to="/feedback">F & Q</Link>
+      <Link to="/contact">F & Q</Link>
     </nav>
   </div>
 );

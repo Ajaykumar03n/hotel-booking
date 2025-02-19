@@ -1,10 +1,28 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faUser } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Rooms.css';
 
 const Single = () => {
+    const navigate = useNavigate();
+
+    const handleBooking = () => {
+        const roomDetails = {
+            roomType: "SINGLE BEDROOM",
+            price: "INR 2,500.00",
+            features: [
+                "Accommodation",
+                "Breakfast",
+                "Free Wi-Fi"
+            ],
+            maxCapacity: 2,
+            image: "/styles/single.jpg"
+        };
+
+        navigate("/payment", { state: roomDetails });
+    };
+
     return (
         <div className="room-details-container">
             <div className="image-section">
@@ -26,7 +44,7 @@ const Single = () => {
                         <FontAwesomeIcon icon={faUser} /> Max. Capacity: 2 Guests
                     </div>
                 </div>
-                <Link to="/payment" className="add-room">BOOK ROOM</Link>
+                <button className="add-room" onClick={handleBooking}>BOOK ROOM</button>
             </div>
         </div>
     );
