@@ -34,7 +34,7 @@ const Payment = () => {
         roomDetails: roomDetails
       };
 
-      const response = await axios.post("http://localhost:5000/api/payment", payload);
+      const response = await axios.post("https://hotel-booking-k5iy.onrender.com/api/payment", payload);
       console.log(response.data);
       setPaymentDetails({
         checkInDate: "",
